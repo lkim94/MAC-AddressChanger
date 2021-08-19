@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
 # Very simple Python program for changing the MAC address of a given network interface card.
-# This program works only on Linux systems and requires net tools to be installed.
+
 # USAGE: python3 MAC-Changer.py -i <interface_name> -m <new_mac_address>
 
-import argparse, subprocess, time, re
+import argparse, subprocess, re
 
 # Function for taking inputs such as the interface and the new MAC address to change to.
 def get_args(*args):
@@ -20,7 +20,7 @@ def get_args(*args):
 
 # Function for chaning the MAC address.
 def change_mac(interface, mac):
-    print(f"\n[+] Changing the MAC address of {interface} to {mac}..."); time.sleep(2)
+    print(f"\n[+] Changing the MAC address of {interface} to {mac}...")
     subprocess.call(["ifconfig", interface, "down"])
     subprocess.call(["ifconfig", interface, "hw", "ether", mac])
     subprocess.call(["ifconfig", interface, "up"])
