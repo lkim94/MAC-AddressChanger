@@ -7,4 +7,4 @@ This program was tested on Kali Linux.
 # Usage
 sudo python3 MAC-Changer.py -i <interface_name> -m <new_mac_address>
 
-![MacChangerPoC](https://user-images.githubusercontent.com/83319068/130139056-4ec38ad6-57da-40e9-808b-27d633807491.png)
+![MacChangerPoC](https://user-images.githubusercontent.com/83319068/130140427-c48bb628-4da2-48f7-b77f-21e26f0646fd.png)
